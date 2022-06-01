@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <!-- Metro 4 -->
+    <link rel="stylesheet" href="metro/css/metro-all.min.css">
+    <style>
+        body {
+            height: 100%;
+            background-color: #434040
+        }
+        .video-url{
+            width: 1000px;
+        }
+        .link-select{
+            width: 230px;
+        }
+    </style>
+    <title>视频解析</title>
+</head>
+
+<body>
+    <div class="container pt-5">
+        <div class="container bg-white">视频解析</div>
+        <div class="embed-container h-70">
+            <iframe src="" allowfullscreen id="palyer-iframe"></iframe>
+        </div>
+        <div class="container bg-white">
+            <div class="d-flex flex-content-center flex-wrap py-3">
+                <div class="float-left video-url">
+                    <input type="text" data-role="input" id="video-url">
+                </div>
+                <div class="float-left link-select">
+                    <select data-role="select" data-filter="false" id="link-select">
+                        <option value="https://jsap.attakids.com/?url=">蓝光解析</option>
+                        <option value="https://jx.parwix.com:4433/player/?url=">B站解析1</option>
+                        <option value="https://www.pangujiexi.com/jiexi/?url=">盘古解析</option>
+                        <option value="https://www.mtosz.com/m3u8.php?url=">Mao解析</option>
+                        <option value="https://www.h8jx.com/jiexi.php?url=">H8解析</option>
+                    </select>
+                </div>
+                <div class="float-left">
+                    <button class="button yellow w-100" id="play-btn">解析播放</button>
+                </div>
+            </div>
+            <div class="container p-3">
+                <p>
+                    视频解析网站，复制视频链接到输入框，选择接口后点击解析播放。
+                        <strong>可以看所有vip和超前点播的视频，预播本身就是一小段视频。</strong>
+                    </p>
+                </p>
+                <p>详细教程：<a href="help.html" style="text-decoration: none;" target="_blank">点我查看</a></p>
+                <div class="container px-1 pt-3">
+                    <div class="row">
+                        <b>当前播放网页链接：</b>
+                        <a id="current-play-url" href="#" rel="noreferrer nofollow" target="_blank"
+                            style="text-decoration: none;">还没解析</a>
+                    </div>
+                    
+                </div>
+                <div class="remark dark">
+                    <div><b>注</b>：本站提供的播放接口均收集自网络，<b>本站只提供web页面服务，并不提供影片资源存储，也不参与录制、上传。</b>本站只能用于学习交流，切勿用于商业用途，否则后果自负！</div>
+                    <b>支持主流视频播放平台：</b>
+                    <a href="https://www.iqiyi.com/" rel="noreferrer nofollow" target="_blank">爱奇艺</a><a>、
+                    </a><a href="https://v.qq.com/" rel="noreferrer nofollow" target="_blank">腾讯视频</a><a>、
+                    </a><a href="https://www.youku.com/" rel="noreferrer nofollow" target="_blank">优酷</a><a>、
+                    </a><a href="https://www.mgtv.com/" rel="noreferrer nofollow" target="_blank">芒果TV</a><a>、
+                    </a><a href="http://www.le.com/" rel="noreferrer nofollow" target="_blank">乐视</a><a>、
+                    </a><a href="https://www.bilibili.com/" rel="noreferrer nofollow" target="_blank">bilibili</a><a>、
+                    </a><a href="https://www.acfun.cn/" rel="noreferrer nofollow" target="_blank">acfun</a><a>  等等
+                    </a>
+                </div>
+                <p class="text-center"><strong>Powered by <a href="https://metroui.org.ua"
+                    style="text-decoration: none;" target="_blank">Metro4</a></strong></p>
+            </div>
+        </div>
+    </div>
+    <!-- Metro 4 -->
+    <script src="metro/js/metro.min.js"></script>
+    <script src="metro/js/vip_analysis.js"></script>
+</body>
+
+</html>
